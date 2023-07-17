@@ -12,3 +12,11 @@ echo "This is an example of the echo command"
 current_list_of_dir_info="$(ls -d -- */)" #if no directory, throws: ls: */: No such file or directory
 echo "Here is the list of the directories"
 echo "$current_list_of_dir_info"
+#current working directory
+currentlyAt=$PWD #special env variable holding current directory value
+echo "$currentlyAt"
+
+# Following commands did not produce any output,on the other hand, if executed directly on the command, it produces valid output
+# wasAt="$($OLDPWD)"
+# echo "last working directory is given by :"
+# echo "$wasAt"
