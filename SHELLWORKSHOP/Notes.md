@@ -11,3 +11,6 @@ Shell Programming in Unix, Linux and OS X: Kochan & Wood
 [Termina on Mac](https://youtu.be/4q6Vtym-nno)
 
 [Echo: First command](https://youtu.be/ggf5WhOYy1U)
+
+[Directory navigation](https://youtu.be/i9Xp94DmdB8)
+
