@@ -20,3 +20,7 @@ echo "$currentlyAt"
 # wasAt="$($OLDPWD)"
 # echo "last working directory is given by :"
 # echo "$wasAt"
+
+## introduction to grep and wc
+## introduction to $PS1
+## introduction to alias
