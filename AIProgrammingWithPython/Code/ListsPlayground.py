@@ -2,7 +2,7 @@
 from random import randint
 '''
     list is a DS which is a mutable ordered sequence of elements
-    list can have heterogenous elements
+    list can have heterogeneous elements
 '''
 simple_list = [1,2,3,42,5,61]
 print("this is a simple list {}".format(simple_list))
