@@ -42,26 +42,18 @@ Just remember about that infinite series of 1 bits in a negative number, and the
 
 ### Extra Information ###
 
-[BitArray]
+[BitArray](https://wiki.python.org/moin/BitArray)
 
-[BitManipulation]
+[BitManipulation](https://wiki.python.org/moin/BitManipulation)
+ 
 
-[BitManipulation]: https://wiki.python.org/moin/BitManipulation
-[BitArray]: https://wiki.python.org/moin/BitArray
-
-[ErrorsAndExceptions]
+[ErrorsAndExceptions]( https://docs.python.org/3/tutorial/errors.html)
 Difference between Errors and Exceptions.
 
 ``An Exception is a problem that occurs when the code is running, but a 'Syntax Error' is a problem detected when Python checks the code before it runs it``
 
-[ErrorsAndExceptions]: https://docs.python.org/3/tutorial/errors.html
+[String Methods](https://docs.python.org/3/library/stdtypes.html#string-methods)
+: Above is a link to most commonly used string methods in python.
 
-[String Methods]
+[More String Methods](https://docs.python.org/3/library/stdtypes.html#textseq)
 
-Above is a link to most commonly used string methods in python.
-
-[String Methods]:https://docs.python.org/3/library/stdtypes.html#string-methods
-
-[More String Methods]
-
-[More String Methods]:https://docs.python.org/3/library/stdtypes.html#textseq
