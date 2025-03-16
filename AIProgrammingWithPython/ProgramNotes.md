@@ -69,7 +69,7 @@ Here are most of the built-in objects that are considered False in Python:
 - zero of any numeric type: 0, 0.0, 0j, Decimal(0), Fraction(0, 1)
 - empty sequences and collections: '"", (), [], {}, set(), range(0)
 
-#### Iterable
+### Iterable
 An iterable is an object that can return one of its elements at a time. This can include sequence types, such as strings, 
 lists, and tuples, as well as non-sequence types, such as dictionaries and files.
 
@@ -79,4 +79,12 @@ lists, and tuples, as well as non-sequence types, such as dictionaries and files
 - When you iterate through a dictionary using a for loop, doing it the normal way, like
 for n in some_dict , will only give you access to the keys in the dictionary.
 - For obtaining both key and value, use .items() method which generates a tuple of key value.
+
+### Zip & Enumerate:
+- zip returns an iterator that combines multiple iterables into one sequence of tuples. Each tuple contains the elements
+in that position from all the iterables.
+- enumerate is a built in function that returns an iterator of tuples containing indices and values of a list.
+
+### List comprehension:
+- You create a list comprehension with brackets [], including an expression to evaluate for each element in an iterable.
 - 
