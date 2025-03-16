@@ -1,0 +1,108 @@
+--- # Document Start Marker
+
+# Comments in YAML are indicated by the '#' symbol and are not processed
+# by the parser.
+
+######### ########
+### Data Types ###
+######## #########
+
+# The root structure of this document is a map, which behaves like a
+# dictionary or object in other languages.
+name: Alice # String
+task: Complete YAML tutorial # String with spaces
+progress: 80 # Integer
+computed_value: 2e+3 # Scientific notation
+binary_value: 0b101101 # evaluates to 45 in decimal
+base_eight_value: 017 # evaluates to 15 in decimal
+
+# Differentiating between types explicitly:
+is_active: true # Boolean
+undefined_status: null # Null
+alternative_null: ~ # Alternative null representation
+spaced out key: example value # Keys can contain spaces
+
+# Strings and booleans can be misinterpreted; explicit typing
+# can be used to avoid this.
+active: "no" # retains the string "no" instead of boolean false
+confirmation: No # interpreted as boolean false
+response: "yes" # remains a string due to quotes
+numeric_response: yes # interpreted as boolean true because it's unquoted
+
+# Quotation in YAML:
+specific: "A quoted string for clarity."
+"Quoted Key:example.": "A key containing a colon ':' must be quoted."
+apostrophes: "To include an apostrophe', escape it by doubling"
+complex_string: "A string with escapes: \", \t, ☺, and more."
+
+# Using Unicode and encoding special characters:
+power_of_two: \u00B2
+meta_characters: "[Alice] & {Bob} - <Charlie>"
+
+############ ############
+### String Formatting ###
+########### #############
+
+# YAML supports multi-line strings using block notation:
+# '|' maintains line breaks
+# '>' folds line breaks into spaces
+
+# Block Literal: Maintains formatting with '|'.
+detailed_description: |
+  This text spans multiple lines, maintaining all line breaks as-is.
+  Indentation within the block is significant and preserved.
+      Additional indentation is treated as part of the text.
+
+# Folded Text: Line breaks become spaces unless blank lines are present with '>'.
+compact_view: >
+  This text style folds new lines into spaces to form a single paragraph.
+  New paragraphs are separated by blank lines and are preserved.
+
+# Control trailing new lines using '-', to strip, or '+', to keep.
+strip_new_lines: |-
+  This block will not have a trailing new line at the end
+
+fold_paragraphs: >-
+  Folds all lines into spaces, and will not end with a new line.
+  This is the second line.
+
+preserve_new_lines: |
+  This block will include trailing new lines.
+  This is the second line.
+
+########## ###############
+### Complex Structures ###
+######### ################
+
+# Indentation signifies nesting. A 2-space indent is conventional:
+nested_structure:
+  level_one_key: value
+  another_level_one_key: Another Level Value
+  deeper_structure:
+    nested_key: nested value
+
+# Non-string keys are perfectly valid:
+3.14159: a float key
+
+# Lists (sequences) are straightforward in YAML:
+item_list:
+  - Element 1
+  - Element 2
+  - 3.14159 # Lists can contain varied data types.
+  - Element 4
+  - key_in_list: list_value
+    another_key_in_list: another_list_value
+  - - A list within a list
+    - Another element
+  - - - Triple nested list
+      - More nesting
+
+# YAML can also represent data in JSON format:
+json_style_map: { "map_key": "map_value" }
+json_style_list: ["start", "middle", "end"]
+mix_and_match: { regular_key: ["structured", "data", "format"] }
+
+--- # Second document start
+
+# YAML documents can contain multiple structures separated by '---'
+name: Bob
