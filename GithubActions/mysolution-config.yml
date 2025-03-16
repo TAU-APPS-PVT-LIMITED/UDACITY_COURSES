@@ -1,0 +1,47 @@
+ # marker
+
+### Config.yaml ####
+
+application name : "myapp"
+version: 1.0
+author: "your name"
+description: "a complex yaml exercise"
+environment settings:
+   development:
+     host: "localhost"
+     port: 3000
+     database:
+       type: mysql
+       host: "localhost"
+       port: 3306
+       username: "dev_user"
+       schema name: "development_schema"
+       logging configuration:
+         log file: /var/log/dev.log
+         log level: debug #should this be in ""?
+       modules:
+         - name: module 1
+           enabled: true
+           priority: 1
+         - name: module 2
+           enabled: false
+           priority: 2
+   production:
+     host: "production.example.com"
+     port: 80
+     database:
+       type: postgresql
+       host: "db.example.com"
+       port: 5432
+       username: prod_user
+       schema name: production_schema
+       logging configuration:
+         log file: /var/log/prod.log
+         log level: info
+       modules:
+         - name: module 1
+           enabled: true
+           priority: 1
+         - name: module 2
+           enabled: true
+           priority: 2
